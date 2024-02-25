@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import proj1Img from "@/public/proj1.png";
+import proj2Img from "@/public/proj2.jpg";
+import proj3Img from "@/public/proj3.png";
 
 export const links = [
     {
@@ -70,25 +70,25 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "proj1",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+            "Description here",
         tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+        imageUrl: proj1Img,
     },
     {
-        title: "rmtDev",
+        title: "proj2",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+            "Description here",
         tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+        imageUrl: proj2Img,
     },
     {
-        title: "Word Analytics",
+        title: "proj3",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+            "Description here",
         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+        imageUrl: proj3Img,
     },
 ] as const;
 
