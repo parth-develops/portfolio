@@ -21,14 +21,14 @@ export default function Projects() {
     )
 }
 
-type ProjectProps = typeof projectsData[0];
+type ProjectProps = typeof projectsData[number];
 
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
-    return <article className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem]">
-        <div className="py-4 px-5 sm:pl-10 sm:pt-10 sm:max-w-[50%]">
+    return <article className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8">
+        <div className="pt-4 pb-7 px-5 sm:pr-2 sm:pl-10 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
             <h3 className="text-2xl font-semibold">{title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-            <ul className="flex flex-wrap mt-4 gap-2">
+            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
                 {
                     tags.map((tag, index) => (
                         <li key={index} className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full">{tag}</li>

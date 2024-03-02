@@ -72,7 +72,7 @@ export const projectsData = [
     {
         title: "proj1",
         description:
-            "Description here",
+            "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
         imageUrl: proj1Img,
     },
