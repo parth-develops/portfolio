@@ -5,6 +5,20 @@ import { LuGraduationCap } from "react-icons/lu";
 import proj1Img from "@/public/proj1.png";
 import proj2Img from "@/public/proj2.jpg";
 import proj3Img from "@/public/proj3.png";
+import bootstrap from "@/assets/images/icons/bootstrap.png";
+import ci from "@/assets/images/icons/ci.png";
+import css3 from "@/assets/images/icons/css3.png";
+import framer from "@/assets/images/icons/framer.png";
+import git from "@/assets/images/icons/git.png";
+import html5 from "@/assets/images/icons/html5.png";
+import js from "@/assets/images/icons/js.png";
+import nextjs from "@/assets/images/icons/nextjs.png";
+import mysql from "@/assets/images/icons/mysql.png";
+import php from "@/assets/images/icons/php.png";
+import react from "@/assets/images/icons/react.png";
+import scss from "@/assets/images/icons/scss.png";
+import tailwind from "@/assets/images/icons/tailwind.png";
+import ts from "@/assets/images/icons/ts.png";
 
 export const links = [
     {
@@ -93,23 +107,18 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Git",
-    "Tailwind",
-    "Prisma",
-    "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
-    "Express",
-    "PostgreSQL",
-    "Python",
-    "Django",
-    "Framer Motion",
+    { icon: html5, title: "HTML" },
+    { icon: css3, title: "CSS" },
+    { icon: scss, title: "SCSS" },
+    { icon: tailwind, title: "Tailwind" },
+    { icon: bootstrap, title: "Bootstrap" },
+    { icon: js, title: "JavaScript" },
+    { icon: ts, title: "TypeScript" },
+    { icon: react, title: "React" },
+    { icon: nextjs, title: "Next.js" },
+    { icon: framer, title: "Framer motion" },
+    { icon: git, title: "Git" },
+    { icon: php, title: "PHP" },
+    { icon: mysql, title: "MYSQL" },
+    { icon: ci, title: "Codeigniter" },
 ] as const;

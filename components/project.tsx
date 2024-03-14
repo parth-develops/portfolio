@@ -23,7 +23,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
             ref={ref}
             style={{
                 scale: scaleProgress,
-                opacity: scaleProgress,
+                opacity: opacityProgress,
             }}
         >
             <article
