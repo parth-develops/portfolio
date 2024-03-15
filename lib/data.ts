@@ -52,7 +52,7 @@ export const experiencesData = [
         title: "Computer Engineering",
         location: "India",
         description:
-            "Description here",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
         icon: React.createElement(LuGraduationCap),
         date: "2018 - 2022",
     },
@@ -60,7 +60,7 @@ export const experiencesData = [
         title: "Web Dev Intern",
         location: "India",
         description:
-            "Description here",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
         icon: React.createElement(CgWorkAlt),
         date: "March 2021 - November 2021",
     },
@@ -68,7 +68,7 @@ export const experiencesData = [
         title: "Freelance Front-End Developer",
         location: "Remote",
         description:
-            "Description here",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
         icon: React.createElement(CgWorkAlt),
         date: "2022",
     },
@@ -76,7 +76,7 @@ export const experiencesData = [
         title: "Full-Stack Developer",
         location: "Remote",
         description:
-            "Decription here",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
         icon: React.createElement(FaReact),
         date: "Nov 2022 - present",
     },
