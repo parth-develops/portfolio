@@ -2,10 +2,12 @@
 
 import { Resend } from "resend";
 import { validateString } from "@/lib/utils";
+import ContactFormEmail from "@/email/contact-form-email";
+import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const getErrorMessage = (error: unknown):string => {
+const getErrorMessage = (error: unknown): string => {
     let message: string;
     if (error instanceof Error) {
         message = error.message;
@@ -35,17 +37,22 @@ export const sendEmail = async (formData: FormData) => {
         }
     }
 
+    let data;
     try {
-        await resend.emails.send({
+        data = await resend.emails.send({
             from: 'Contact Form <onboarding@resend.dev>',
             to: "pumrania9@gmail.com",
-            subject: "HEy there",
+            subject: "Hey there",
             reply_to: email as string,
-            text: message as string,
+            react: React.createElement(ContactFormEmail, { message: message as string, email: email as string })
         });
     } catch (error: unknown) {
         return {
             error: getErrorMessage(error)
         }
+    }
+
+    return {
+        data
     }
 }
