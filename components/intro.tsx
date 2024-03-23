@@ -68,18 +68,18 @@ export default function Intro() {
         <a
           href="/resume.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full shadow outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
-        >Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" /></a>
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full shadow outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/70 dark:hover:text-white/100"
+        >Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition dark:group-hover:opacity-100" /></a>
         <div className="flex justify-center gap-3">
           <a
             href="https://www.linkedin.com/in/parth-umrania/"
             target="_blank"
-            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full shadow outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full shadow outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition dark:bg-white/10 dark:text-white/70 dark:hover:text-white/100"
           ><BsLinkedin /></a>
           <a
             href="https://github.com/parth-develops"
             target="_blank"
-            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full shadow  outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition"
+            className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full shadow  outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition dark:bg-white/10 dark:text-white/70 dark:hover:text-white/100"
           ><BsGithub /></a>
         </div>
       </motion.div>

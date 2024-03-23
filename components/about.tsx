@@ -8,7 +8,7 @@ export default function About() {
     const { ref } = useSectionInView("About", 0.75);
 
     return (
-        <motion.section id="about" className="scroll-mt-28 mb-12 max-w-[45rem] text-center leading-7 sm:mb-24"
+        <motion.section id="about" className="scroll-mt-28 mt-12 sm:mt-0 mb-12 max-w-[45rem] text-center leading-7 sm:mb-24"
             ref={ref}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
