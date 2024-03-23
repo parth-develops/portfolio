@@ -3,7 +3,6 @@
 import React, { useState, createContext, useContext } from 'react'
 import type { SectionName } from '@/lib/types';
 
-
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 }
