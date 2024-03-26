@@ -36,16 +36,16 @@ export default function Contact() {
         }
 
         toast.success("Email sent successfully!");
-      }} className="mt-10 flex flex-col dark:text-black">
+      }} className="mt-10 flex flex-col dark:text-white">
         <input type="email" name="email"
           required
           maxLength={500}
-          className="h-14 px-4 rounded-lg borderBlack focus:outline-black focus:outline focus:outline-2 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none" placeholder="Your email"
+          className="h-14 px-4 rounded-lg borderBlack focus:outline-black focus:outline focus:outline-2 dark:bg-[#202022] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-white" placeholder="Your email"
         />
         <textarea name="message" id="message"
           required
           maxLength={5000}
-          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-black focus:outline focus:outline-2 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-black focus:outline focus:outline-2 dark:bg-[#202022] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-white"
           placeholder="Your message"
         ></textarea>
         <SubmitBtn />
