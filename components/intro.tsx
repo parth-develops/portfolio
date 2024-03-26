@@ -14,7 +14,8 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section ref={ref} className="mb-18 mt-36 max-w-[50rem] text-center">
+    <section ref={ref} className="mb-18 mt-36 max-w-[50rem] text-center relative">
+      <div className="bg-[#00000000] absolute top-[50%] -z-10 left-[50%] -translate-x-[50%] -translate-y-[50%] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#5656ff26]"></div>
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
