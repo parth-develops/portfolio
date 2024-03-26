@@ -29,8 +29,8 @@ export default function Header() {
                 <Link
                   href={link.hash}
                   className={
-                    clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:hover:text-gray-100",
-                      { "text-gray-950 dark:text-gray-100": activeSection === link.name })
+                    clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 dark:text-gray-400 transition dark:hover:text-gray-100",
+                      { "text-gray-950 dark:!text-gray-100": activeSection === link.name })
                   }
                   onClick={() => {
                     setTimeOfLastClick(Date.now());
