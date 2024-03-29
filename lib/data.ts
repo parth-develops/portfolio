@@ -49,36 +49,36 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Computer Engineering",
-        location: "India",
+        title: "Full-Stack Developer",
+        location: "Remote",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2018 - 2022",
-    },
-    {
-        title: "Web Dev Intern",
-        location: "India",
-        description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        icon: React.createElement(CgWorkAlt),
-        date: "March 2021 - November 2021",
+            "I managed website development, using React, Next.js, PHP/CodeIgniter, and MySQL, while collaborating with the marketing team to integrate new features based on trends and feedback. Working solo, I focused on enhancing the website's performance and functionality.",
+        icon: React.createElement(FaReact),
+        date: "Nov 2022 - present",
     },
     {
         title: "Freelance Front-End Developer",
         location: "Remote",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
+            "As a freelance front-end web developer, I've built visually stunning and user-friendly websites for clients across various industries, honing my communication and project management skills to ensure timely and budget-friendly delivery.",
         icon: React.createElement(CgWorkAlt),
         date: "2022",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Remote",
+        title: "Web Dev Intern",
+        location: "India",
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
-        icon: React.createElement(FaReact),
-        date: "Nov 2022 - present",
+            "Developed responsive website designs using HTML, CSS, and JavaScript to enhance user engagement and site performance. I collaborated across teams to troubleshoot and ensure seamless functionality, also assisting in web application creation and maintenance.",
+        icon: React.createElement(CgWorkAlt),
+        date: "March 2021 - November 2021",
+    },
+    {
+        title: "Computer Engineering",
+        location: "India",
+        description:
+            "I completed my Bachelor's in Computer Engineering with an 8.23 CGPA, gaining comprehensive knowledge in the field. This education equipped me with a solid foundation for my career in technology.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2018 - 2022",
     },
 ] as const;
 
