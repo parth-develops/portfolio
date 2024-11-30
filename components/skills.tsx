@@ -5,6 +5,7 @@ import Heading from "./heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const fadeInAnimationsVariants = {
     initial: {
@@ -31,7 +32,7 @@ export default function Skills() {
                     skillsData.map((skill, index) =>
                         <motion.li
                             key={index}
-                            className="bg-white border borderBlack rounded-md text-sm sm:text-base sm:rounded-xl px-3 sm:px-5 py-1 sm:py-3 text-center flex justify-between items-center gap-1 sm:gap-2 dark:bg-white/10 dark:text-white/80"
+                            className="bg-white border borderBlack rounded-md text-sm sm:text-base sm:rounded-xl text-center dark:bg-white/10 dark:text-white/80"
                             variants={fadeInAnimationsVariants}
                             initial="initial"
                             whileInView="animate"
@@ -40,8 +41,10 @@ export default function Skills() {
                             }}
                             custom={index}
                         >
-                            <Image src={skill.icon} alt={skill.title} className="w-[22px] sm:w-[30px]" />
-                            <p className="text-sm">{skill.title}</p>
+                            <Link href={skill.link} type="external" target="_blank" className="flex justify-between items-center gap-1 sm:gap-2 px-3 sm:px-5 py-1 sm:py-3">
+                                <Image src={skill.icon} alt={skill.title} className="w-[22px] sm:w-[30px]" />
+                                <p className="text-sm">{skill.title}</p>
+                            </Link>
                         </motion.li>
                     )
                 }

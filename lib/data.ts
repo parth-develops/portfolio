@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import proj1Img from "@/public/proj1.png";
-import proj2Img from "@/public/proj2.jpg";
-import proj3Img from "@/public/proj3.png";
+import proj1Img from "@/public/MMSS.png";
+import proj2Img from "@/public/adminDash.png";
+import proj3Img from "@/public/aisaas.png";
+import proj4Img from "@/public/jobboard.png";
 import bootstrap from "@/assets/images/icons/bootstrap.png";
 import ci from "@/assets/images/icons/ci.png";
 import css3 from "@/assets/images/icons/css3.png";
@@ -18,7 +19,9 @@ import php from "@/assets/images/icons/php.png";
 import react from "@/assets/images/icons/react.png";
 import scss from "@/assets/images/icons/scss.png";
 import tailwind from "@/assets/images/icons/tailwind.png";
-import ts from "@/assets/images/icons/ts.png";
+import ts from "@/assets/images/icons/typescript.png";
+import authjs from "@/assets/images/icons/authjs.png";
+import mongo from "@/assets/images/icons/mongo.png";
 
 export const links = [
     {
@@ -84,41 +87,58 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "proj1",
+        title: "Mandarin Mastery",
+        githubLink: "https://github.com/parth-develops/mandarin-mastery",
+        liveLink: "https://mandarin-mastery.vercel.app/",
         description:
-            "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: proj1Img,
+            "Mandarin Mastery is a web application designed to make learning Mandarin Chinese accessible and fun. With interactive lessons, pronunciation practice, quizzes, and personalized learning paths, you can learn at your own pace and track your progress.",
+        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Next auth"],
+        image: { url: proj1Img, isOnLeft: false }
     },
     {
-        title: "proj2",
+        title: "Admin Dashboard",
+        githubLink: "https://github.com/parth-develops/admin-dashboard",
+        liveLink: "https://admin-dashboard-two-gray-90.vercel.app",
         description:
-            "Description here",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: proj2Img,
+            "Admin Dashboard streamlines administrative tasks, providing a centralized platform to oversee user accounts, product information, and key metrics.",
+        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Next auth"],
+        image: { url: proj2Img, isOnLeft: false }
     },
     {
-        title: "proj3",
+        title: "AI Saas Landing page",
+        githubLink: "https://github.com/parth-develops/brainwave",
+        liveLink: "https://brainwave-fawn-gamma.vercel.app/",
         description:
-            "Description here",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: proj3Img,
+            "AI SaaS Landing Page is a captivating and responsive landing page that leverages scroll animations and parallax effects to deliver an immersive user experience.",
+        tags: ["React", "Tailwind", "Parallax animations"],
+        image: { url: proj3Img, isOnLeft: false }
+    },
+    {
+        title: "Job Board",
+        githubLink: "https://github.com/parth-develops/job-board",
+        liveLink: "https://job-board-three-mauve.vercel.app/",
+        description:
+            "It is a job board platform that enables organizations to register their companies, create job postings, and manage their recruitment process efficiently.",
+        tags: ["React", "Typescript", "Next.js", "MongoDB", "Tailwind", "WorkOS Auth"],
+        image: { url: proj4Img, isOnLeft: false }
     },
 ] as const;
 
 export const skillsData = [
-    { icon: html5, title: "HTML" },
-    { icon: css3, title: "CSS" },
-    { icon: scss, title: "SCSS" },
-    { icon: tailwind, title: "Tailwind" },
-    { icon: bootstrap, title: "Bootstrap" },
-    { icon: js, title: "JavaScript" },
-    { icon: ts, title: "TypeScript" },
-    { icon: react, title: "React" },
-    { icon: nextjs, title: "Next.js" },
-    { icon: framer, title: "Framer motion" },
-    { icon: git, title: "Git" },
-    { icon: php, title: "PHP" },
-    { icon: mysql, title: "MYSQL" },
-    { icon: ci, title: "Codeigniter" },
+    { icon: html5, title: "HTML", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { icon: css3, title: "CSS", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { icon: scss, title: "SCSS", link: "https://sass-lang.com/" },
+    { icon: tailwind, title: "Tailwind", link: "https://tailwindcss.com/" },
+    { icon: bootstrap, title: "Bootstrap", link: "https://getbootstrap.com/" },
+    { icon: js, title: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { icon: ts, title: "TypeScript", link: "https://www.typescriptlang.org/" },
+    { icon: react, title: "React", link: "https://react.dev/" },
+    { icon: nextjs, title: "Next.js", link: "https://nextjs.org/" },
+    { icon: authjs, title: "Auth.js", link: "https://authjs.dev/" },
+    { icon: mongo, title: "MongoDB", link: "https://www.mongodb.com/" },
+    { icon: framer, title: "Framer motion", link: "https://motion.dev/" },
+    { icon: git, title: "Git", link: "https://git-scm.com/" },
+    { icon: php, title: "PHP", link: "https://www.php.net/" },
+    { icon: mysql, title: "MYSQL", link: "https://www.mysql.com/" },
+    { icon: ci, title: "Codeigniter", link: "https://www.codeigniter.com/" },
 ] as const;
