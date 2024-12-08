@@ -1,2 +1,2 @@
-## My portfolio - a work in progress.
-Planning to use framer motion, lets see how it goes :)
+## My web portfolio
+Built using React, next (server actions & app router), Resend, Tailwind and Framer motion.
