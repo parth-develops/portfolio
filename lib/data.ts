@@ -55,7 +55,7 @@ export const experiencesData = [
         title: "Full-Stack Developer",
         location: "Remote",
         description:
-            "I managed website development, using React, Next.js, PHP/CodeIgniter, and MySQL, while collaborating with the marketing team to integrate new features based on trends and feedback. Working solo, I focused on enhancing the website's performance and functionality.",
+            "Designed and developed web apps, focusing on performance and user experience, optimizing and reducing data processing latency by over 80%. Collaborated with cross functional teams to improve SEO, implement  robust web security practices and elevate overall performance scores. Utilized React, Next, MySQL & CodeIgniter to develop scalable, efficient, and secure solutions.",
         icon: React.createElement(FaReact),
         date: "Nov 2022 - present",
     },
@@ -79,7 +79,7 @@ export const experiencesData = [
         title: "Computer Engineering",
         location: "India",
         description:
-            "I completed my Bachelor's in Computer Engineering with an 8.23 CGPA, gaining comprehensive knowledge in the field. This education equipped me with a solid foundation for my career in technology.",
+            "I completed my Bachelor's in Computer Engineering with an 8.23 CGPA, gaining comprehensive knowledge in the field. This education equipped me with a solid foundation for my career.",
         icon: React.createElement(LuGraduationCap),
         date: "2018 - 2022",
     },

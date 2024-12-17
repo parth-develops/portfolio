@@ -14,7 +14,7 @@ export default function Projects() {
     const showLess = () => setVisibleProjects(3);
 
     return (
-        <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+        <section ref={ref} id="projects" className="scroll-mt-28 sm:mb-24 mb-12">
             <Heading>My Projects</Heading>
 
             <div>

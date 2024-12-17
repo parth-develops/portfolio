@@ -13,3 +13,9 @@ html.dark {
 .borderBlack {
     @apply border border-black/10;
 }
+
+@media (max-width:768px) {
+    .vertical-timeline-element-content {
+        padding: 14px !important;
+    }
+}
