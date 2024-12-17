@@ -15,8 +15,9 @@ export default function About() {
             transition={{ delay: 0.175 }}
         >
             <Heading>About me</Heading>
-            <p className="mb-3 text-justify">As a seasoned frontend developer specializing in React, Next.js, SCSS, HTML, and CSS, I thrive on crafting immersive digital experiences that captivate and engage users. With a keen eye for detail and a passion for clean, elegant code, I bring ideas to life with pixel-perfect precision.</p>
-            <p className="text-justify">Driven by a relentless pursuit of innovation, I continuously push the boundaries of what&apos;s possible in web development. Whether it&apos;s architecting seamless user interfaces or optimizing performance for lightning-fast load times, I am dedicated to delivering solutions that not only meet but exceed expectations. Let&apos;s collaborate and turn your vision into reality.</p>
+            <p className="mb-3 text-justify">As a full-stack JavaScript developer, I focus on high-performance, efficient web application building, using technologies such as React, Next.js, Tailwind CSS, MongoDB, and MySQL. My passion lies in seeing how the design and functionality come together in seamless digital experiences that capture users and bring value in the real world.</p>
+            <p className="mb-3 text-justify">I have experience with front-end as well as back-end development. With this background, I have skills in crafting pixel-perfect user interfaces, implementing web security best practices, and optimizing application performance. My aim is always to translate ideas into impactful, high-quality solutions through the development of scalable APIs and intuitive designs.</p>
+            <p className="text-justify">Let&apos;s make your vision come to life!</p>
         </motion.section>
     )
 }
