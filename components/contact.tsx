@@ -25,7 +25,7 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <Heading>Contact Me</Heading>
-      <p className="text-gray-700 text-center dark:text-white/80">Please contact me directly at <a href="mailto:example@gmail.com">example@gmail.com</a> or through this form.</p>
+      <p className="text-gray-700 text-center dark:text-white/80">Please contact me directly at <a href="mailto:pumrania9@gmail.com">pumrania9@gmail.com</a> or through this form.</p>
 
       <form action={async (formData) => {
         const { data, error } = await sendEmail(formData);
