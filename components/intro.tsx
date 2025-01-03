@@ -5,7 +5,7 @@ import propic from "@/assets/images/propic.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { FaLink } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -67,10 +67,9 @@ export default function Intro() {
           Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/resume.pdf"
-          download
+          href="https://rxresu.me/pumrania9/fullstack-developer"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full shadow outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/70 dark:hover:text-white/100"
-        >Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition dark:group-hover:opacity-100" /></a>
+        >Resume/CV <FaLink className="opacity-60 group-hover:translate-y-1 transition dark:group-hover:opacity-100" /></a>
       </motion.div>
       <motion.div className="flex gap-3 justify-center items-center flex-wrap font-medium"
         initial={{ opacity: 0, y: 100 }}
