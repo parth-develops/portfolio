@@ -68,6 +68,7 @@ export default function Intro() {
         </Link>
         <a
           href="https://rxresu.me/pumrania9/fullstack-developer"
+          target="_blank"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full shadow outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/70 dark:hover:text-white/100"
         >Resume/CV <FaLink className="opacity-60 group-hover:translate-y-1 transition dark:group-hover:opacity-100" /></a>
       </motion.div>
