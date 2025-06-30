@@ -22,6 +22,8 @@ import tailwind from "@/assets/images/icons/tailwind.png";
 import ts from "@/assets/images/icons/typescript.png";
 import authjs from "@/assets/images/icons/authjs.png";
 import mongo from "@/assets/images/icons/mongo.png";
+import postgresql from "@/assets/images/icons/postgresql.png";
+import drizzleorm from "@/assets/images/icons/drizzleorm.png";
 
 export const links = [
     {
@@ -55,7 +57,7 @@ export const experiencesData = [
         title: "Full-Stack Developer",
         location: "Remote",
         description:
-            "Designed and developed web apps, focusing on performance and user experience, optimizing and reducing data processing latency by over 80%. Collaborated with cross functional teams to improve SEO, implement  robust web security practices and elevate overall performance scores. Utilized React, Next, MySQL & CodeIgniter to develop scalable, efficient, and secure solutions.",
+            "Designed and developed web apps, focusing on performance and user experience, optimizing and reducing data processing latency by over 80%. Collaborated with cross functional teams to improve SEO, implement  robust web security practices and elevate overall performance scores. Utilized React, Next, Typescript, PostgreSQL & Drizzle ORM to develop scalable, efficient, and secure solutions.",
         icon: React.createElement(FaReact),
         date: "Nov 2022 - present",
     },
@@ -134,6 +136,8 @@ export const skillsData = [
     { icon: ts, title: "TypeScript", link: "https://www.typescriptlang.org/" },
     { icon: react, title: "React", link: "https://react.dev/" },
     { icon: nextjs, title: "Next.js", link: "https://nextjs.org/" },
+    { icon: postgresql, title: "PostgreSQL", link: "https://www.postgresql.org/" },
+    { icon: drizzleorm, title: "Drizzle ORM", link: "https://orm.drizzle.team/" },
     { icon: authjs, title: "Auth.js", link: "https://authjs.dev/" },
     { icon: mongo, title: "MongoDB", link: "https://www.mongodb.com/" },
     { icon: framer, title: "Framer motion", link: "https://motion.dev/" },

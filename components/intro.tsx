@@ -50,7 +50,7 @@ export default function Intro() {
       <motion.p className="mb-10 px-0 sm:px-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-      ><span className="font-bold">I&apos;m a full-stack developer</span> with <span className="font-bold">2+ years</span> of experience. I enjoy building <span className="italic">web apps</span>. My focus is <span className="underline">React (Next.js)</span>.</motion.p>
+      >A fullstack <span className="font-bold">JavaScript/TypeScript developer</span> with over <span className="font-bold">3 years of experience</span>, focused on React and type-safe backends with Drizzle ORM.</motion.p>
       <motion.div className="flex gap-3 justify-center items-center flex-wrap font-medium mb-8"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
