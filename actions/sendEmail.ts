@@ -43,7 +43,7 @@ export const sendEmail = async (formData: FormData) => {
             from: 'Contact Form <onboarding@resend.dev>',
             to: `${process.env.EMAIL_TO}`,
             subject: "Hey there",
-            reply_to: email as string,
+            replyTo: email as string,
             react: React.createElement(ContactFormEmail, { message: message as string, email: email as string })
         });
     } catch (error: unknown) {

@@ -40,12 +40,12 @@ export default function Contact() {
         <input type="email" name="email"
           required
           maxLength={500}
-          className="h-14 px-4 rounded-lg borderBlack focus:outline-black focus:outline focus:outline-2 dark:bg-[#202022] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-white" placeholder="Your email"
+          className="h-14 px-4 rounded-lg borderBlack focus:outline-black focus:outline-2 dark:bg-[#202022]/80 dark:focus:bg-[#202022] transition-all dark:focus:outline-white" placeholder="Your email"
         />
         <textarea name="message" id="message"
           required
           maxLength={5000}
-          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-black focus:outline focus:outline-2 dark:bg-[#202022] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-white"
+          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-black focus:outline-2 dark:bg-[#202022]/80 dark:focus:bg-[#202022] transition-all dark:focus:outline-white"
           placeholder="Your message"
         ></textarea>
         <SubmitBtn />
