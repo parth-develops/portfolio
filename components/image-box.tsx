@@ -1,10 +1,10 @@
 import { Fancybox as NativeFancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import { OptionsType } from '@fancyapps/ui/types/Fancybox/options';
+import { type FancyboxOptions } from "@fancyapps/ui/dist/fancybox/";
 import { useEffect, useRef, PropsWithChildren } from "react";
 
 interface Props {
-    options?: Partial<OptionsType>;
+    options?: Partial<FancyboxOptions>;
     delegate?: string;
 }
 
