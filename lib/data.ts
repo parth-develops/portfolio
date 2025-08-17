@@ -24,30 +24,42 @@ import authjs from "@/assets/images/icons/authjs.png";
 import mongo from "@/assets/images/icons/mongo.png";
 import postgresql from "@/assets/images/icons/postgresql.png";
 import drizzleorm from "@/assets/images/icons/drizzleorm.png";
+import { IoIosHome } from "react-icons/io";
+import { IoIosInformationCircle } from "react-icons/io";
+import { IoIosFolderOpen } from "react-icons/io";
+import { FaCode } from "react-icons/fa";
+import { HiBriefcase } from "react-icons/hi2";
+import { IoIosMail } from "react-icons/io";
 
-export const links = [
+export const SideNavLinks = [
     {
         name: "Home",
+        icon: IoIosHome,
         hash: "#home",
     },
     {
         name: "About",
+        icon: IoIosInformationCircle,
         hash: "#about",
     },
     {
         name: "Projects",
+        icon: IoIosFolderOpen,
         hash: "#projects",
     },
     {
         name: "Skills",
+        icon: FaCode,
         hash: "#skills",
     },
     {
         name: "Experience",
+        icon: HiBriefcase,
         hash: "#experience",
     },
     {
         name: "Contact",
+        icon: IoIosMail,
         hash: "#contact",
     },
 ] as const;

@@ -1,32 +1,28 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { motion } from "motion/react";
+import { SideNavLinks } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function Header() {
+export default function ScrollTracker() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
-      <motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white/40 bg-white/80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-zinc-700/75 dark:border-black/40"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-      >
-      </motion.div>
-      <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-12 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+    <nav className="z-[999] fixed max-[1100px]:bg-slate-50/80 max-[1100px]:dark:bg-[#060606]/80 max-[1100px]:bottom-0 max-[1100px]:left-1/2 max-[1100px]:-translate-x-1/2 min-[1100px]:top-1/2 min-[1100px]:-translate-y-1/2 min-[1100px]:right-4 py-2 max-[1100px]:w-full">
+      <div className="relative">
+        <ul className="flex min-[1100px]:flex-col flex-wrap items-center justify-center text-[0.9rem] font-medium text-gray-500">
           {
-            links.map(link => (
+            SideNavLinks.map(link => (
               <motion.li
                 key={link.hash}
                 className="h-3/4 flex items-center justify-center relative"
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1, transition: { ease: "easeIn" } }}
               >
                 <Link
+                  title={link.name}
                   href={link.hash}
                   className={
                     clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 dark:text-gray-400 transition dark:hover:text-gray-100",
@@ -37,10 +33,10 @@ export default function Header() {
                     setActiveSection(link.name);
                   }}
                 >
-                  {link.name}
+                  <link.icon size={link.name === activeSection ? 24 : 20} className={`${link.name === activeSection ? "fill-white text-white" : "fill-black text-black dark:fill-white dark:text-white"}`} />
                   {link.name === activeSection && (
                     <motion.span
-                      className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-cyan-700 dark:bg-opacity-80"
+                      className="rounded-full absolute inset-0 -z-10 bg-cyan-700 dark:bg-opacity-80"
                       layoutId="activeSection"
                       transition={{
                         type: "spring",
@@ -54,7 +50,7 @@ export default function Header() {
             ))
           }
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }

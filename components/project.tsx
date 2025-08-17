@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Link from "next/link";
-import Fancybox from "./image-box";
+import Fancybox from "./common/image-box";
 
 type ProjectProps = typeof projectsData[number];
 

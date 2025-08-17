@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import ScrollTracker from "@/components/common/scroll-tracker";
 import Contact from "@/components/contact";
 import Divider from "@/components/divider";
 import Experience from "@/components/experience";
@@ -8,7 +9,8 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-4">
+    <main className="flex relative min-h-screen flex-col items-center justify-between px-4 overflow-hidden">
+      <ScrollTracker />
       <Intro />
       <Divider />
       <About />
